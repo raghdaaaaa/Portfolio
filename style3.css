@@ -346,3 +346,24 @@ body{
 @media(prefers-reduced-motion:reduce){
  .project-card,.project-photo img,.service-card{transition:none!important}
 }
+
+
+/* Contact methods */
+.contact-section h2{margin-top:48px}
+.contact-bottom{margin-top:25px}
+.contact-methods{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin-top:34px}
+.contact-method{min-width:0;display:flex;align-items:center;gap:15px;padding:17px 18px;border:1px solid rgba(230,226,214,.15);border-radius:20px 30px 20px 8px;background:linear-gradient(130deg,rgba(230,226,214,.085),rgba(230,226,214,.025));box-shadow:inset 0 1px 0 rgba(230,226,214,.1);transition:transform .28s ease,border-color .28s ease,background .28s ease}
+.contact-method:hover{transform:translateY(-4px);border-color:rgba(194,188,169,.42);background:linear-gradient(130deg,rgba(230,226,214,.13),rgba(230,226,214,.04))}
+.contact-method-icon{flex:0 0 43px;width:43px;height:43px;display:grid;place-items:center;border-radius:15px 15px 15px 5px;background:rgba(194,188,169,.13);color:var(--taupe);font-size:1rem}
+.contact-method-copy{min-width:0;display:flex;flex-direction:column;gap:5px}
+.contact-method-copy small{font-size:.52rem;letter-spacing:.13em;font-weight:700;color:rgba(194,188,169,.82)}
+.contact-method-copy strong{font-size:.83rem;font-weight:600;overflow-wrap:anywhere}
+.contact-method-arrow{margin-left:auto;flex:0 0 auto;color:var(--taupe);font-size:.68rem;opacity:.8}
+.contact-method:focus-visible{outline:2px solid var(--taupe);outline-offset:4px}
+@media(max-width:700px){
+ .contact-section h2{margin-top:40px}
+ .contact-methods{grid-template-columns:1fr;gap:10px;margin-top:27px}
+ .contact-method{padding:15px 14px;border-radius:18px 26px 18px 8px}
+ .contact-method-copy strong{font-size:.8rem}
+}
+@media(prefers-reduced-motion:reduce){.contact-method{transition:none}}
