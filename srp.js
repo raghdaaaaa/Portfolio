@@ -1,29 +1,59 @@
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
-let sections = document.querySelectorAll('section');  
-let navLinks = document.querySelectorAll('header nav a');
+const menuIcon = document.querySelector('#menu-icon');
+const navigation = document.querySelector('.navigation');
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.navigation a[href^="#"]');
 
-window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
-
-        if (top >= offset && top < offset + height) {
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-            });
-
-            let activeLink = document.querySelector('header nav a[href*=' + id + ']');
-            if (activeLink) {  
-                activeLink.classList.add('active');
-            }
-        }
-    });
+const closeMenu = () => {
+  navigation.classList.remove('active');
+  menuIcon.classList.remove('fa-xmark');
+  menuIcon.classList.add('fa-bars');
+  menuIcon.setAttribute('aria-label', 'Open navigation menu');
+  menuIcon.setAttribute('aria-expanded', 'false');
 };
 
-menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
-};
+menuIcon.addEventListener('click', () => {
+  navigation.classList.toggle('active');
+  const isOpen = navigation.classList.contains('active');
+  menuIcon.classList.toggle('fa-bars', !isOpen);
+  menuIcon.classList.toggle('fa-xmark', isOpen);
+  menuIcon.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+  menuIcon.setAttribute('aria-expanded', String(isOpen));
+});
+
+menuIcon.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter' || event.key === ' ') {
+    event.preventDefault();
+    menuIcon.click();
+  }
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    closeMenu();
+  }
+});
+
+navLinks.forEach((link) => {
+  link.addEventListener('click', closeMenu);
+});
+
+window.addEventListener('scroll', () => {
+  const scrollPosition = window.scrollY + 180;
+  let currentSection = sections[0]?.id;
+
+  sections.forEach((section) => {
+    if (section.offsetTop <= scrollPosition) {
+      currentSection = section.id;
+    }
+  });
+
+  navLinks.forEach((link) => {
+    link.classList.toggle('active', link.getAttribute('href') === `#${currentSection}`);
+  });
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 895) {
+    closeMenu();
+  }
+});

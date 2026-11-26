@@ -13,13 +13,15 @@
   </head>
   <body>
     <header>
-      <a href="#" class="logo">Raghdaa <span> Emad</span></a>
-      <i class="bx bx-menu" id="menu-icon"></i>
+      <a href="#home" class="logo">Raghdaa <span> Emad</span></a>
+      <i class="fa-solid fa-bars" id="menu-icon" role="button" tabindex="0" aria-expanded="false" aria-controls="main-navigation" aria-label="Open navigation menu"></i>
 
-      <nav class="navigation">
+      <nav class="navigation" id="main-navigation" aria-label="Main navigation">
         <a href="#home" class="active">Home</a>
-        <a href="#education">Eduction</a>
-        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -29,13 +31,12 @@
 
     <section class="home" id="home">
       <div class="home-content">
-        <h2>Hi,It's<span> Raghdaa</span></h2>
-        <h3 class="text-animation">I'm a <span></span></h3>
+        <h2>Hi, I'm <span>Raghdaa Emad</span></h2>
+        <h3 class="text-animation">I'm a&nbsp;<span></span></h3>
         <p>
-          An enthusiastic Computer Science student seeking opportunities to
-          learn and grow in programming and web development. Aspiring to gain
-          strong skills in both front-end and back-end development to create
-          fully functional and efficient applications.
+          Computer Science student and Flutter Developer focused on building
+          clean, responsive, and user-friendly mobile applications, integrating
+          REST APIs, and creating reliable mobile experiences.
         </p>
 
         <div class="social-icons">
@@ -54,8 +55,8 @@
         </div>
 
         <div class="btn-group">
-          <a href="#" class="btn">Hire me</a>
-          <a href="#contact" class="btn">Contact</a>
+          <a href="#projects" class="btn">View My Projects</a>
+          <a href="#contact" class="btn">Contact Me</a>
         </div>
       </div>
 
@@ -64,92 +65,148 @@
       </div>
     </section>
 
-    <section class="education" id="education">
-      <h2 class="heading">Education</h2>
-      <div class="timeline-items">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2023</div>
-          <div class="timeline-content">
-            <h3>University</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. At rerum
-              architecto distinctio sequi velit necessitatibus qui facere,
-              cumque magni natus fugiat.
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2024</div>
-          <div class="timeline-content">
-            <h3>Internship</h3>
-            <p>
-              Developed responsive web interfaces using HTML, CSS, and
-              JavaScript,Worked with frameworks like React or databases like
-              MySQL.
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2025</div>
-          <div class="timeline-content">
-            <h3>Future Goals</h3>
-            <p>
-              Develop fully functional web applications using Full Stack tools
-              and technologies like React, Node.js, and databases.
-            </p>
-          </div>
-        </div>
+    <section class="about" id="about">
+      <h2 class="heading">About</h2>
+      <div class="about-content">
+        <p>
+          I'm a Computer Science student and Flutter Developer passionate about
+          building intuitive, functional, and user-friendly mobile applications.
+          I focus on clean and responsive interfaces, REST API integration, and
+          reliable mobile experiences.
+        </p>
       </div>
     </section>
 
-    <section class="services" id="services">
-      <h2 class="heading">Services</h2>
+    <section class="skills" id="skills">
+      <h2 class="heading">Skills</h2>
+      <div class="skills-grid" aria-label="Technical skills">
+        <span>Flutter</span>
+        <span>Dart</span>
+        <span>REST APIs</span>
+        <span>Firebase</span>
+        <span>Provider</span>
+        <span>SharedPreferences</span>
+        <span>Material 3</span>
+      </div>
+    </section>
 
-      <div class="services-container">
-        <div class="services-box">
-          <div class="services-info">
-            <h4>Mobile Application Developer</h4>
-            <p>
-              Creating effective and responsive websites and web applications
-              that meet user needs.
-            </p>
-          </div>
-        </div>
+    <section class="education" id="education">
+      <h2 class="heading">Education &amp; Training</h2>
+      <div class="education-grid">
+        <article class="education-card">
+          <span class="education-label">Education</span>
+          <h3>Computer Science Student</h3>
+          <p>
+            Developing a strong academic foundation in computer science while
+            building practical skills in mobile application development.
+          </p>
+        </article>
 
-        <div class="services-box">
-          <div class="services-info">
-            <h4>Flutter Developer</h4>
-            <p>
-              Designing user-friendly and visually appealing interfaces using
-              HTML, CSS, and JavaScript.
-            </p>
-          </div>
-        </div>
+        <article class="education-card">
+          <span class="education-label">Training</span>
+          <h3>Flutter Mobile Application Development</h3>
+          <p>
+            NTI – Creativa Mansoura
+            <br />
+            Technical Phase Completed
+          </p>
+        </article>
+      </div>
+    </section>
 
-        <div class="services-box">
-          <div class="services-info">
-            <h4>Backend Developer</h4>
-            <p>
-              Developing servers and databases to ensure efficiency and
-              performance using technologies like Node.js and SQL.
-            </p>
-          </div>
-        </div>
+    <section class="projects" id="projects">
+      <h2 class="heading">Projects</h2>
 
-        <div class="services-box">
-          <div class="services-info">
-            <h4>Full Stack Developer</h4>
-            <p>
-              Building complete web applications by combining both front-end and
-              back-end development to deliver comprehensive solutions.
-            </p>
+      <div class="projects-container">
+        <article class="project-card">
+          <div class="project-image">
+            <img
+              src="https://raw.githubusercontent.com/raghdaaaaa/Laptix/main/docs/screenshots/Home.jpg"
+              alt="Laptix app home screen"
+            />
           </div>
-        </div>
+          <div class="project-content">
+            <h3>Laptix</h3>
+            <p>
+              A Flutter app that recommends laptop specifications based on a
+              student's major, usage, and budget, with an offline laptop suitability checker.
+            </p>
+            <div class="project-tags" aria-label="Technologies used">
+              <span>Flutter</span>
+              <span>Dart</span>
+              <span>Material 3</span>
+              <span>Unit & Widget Tests</span>
+            </div>
+            <a
+              href="https://github.com/raghdaaaaa/Laptix"
+              class="project-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image">
+            <img
+              src="https://raw.githubusercontent.com/raghdaaaaa/Studia/main/assets/images/onboarding1.png"
+              alt="Studia app onboarding screen"
+            />
+          </div>
+          <div class="project-content">
+            <h3>Studia</h3>
+            <p>
+              A study and task management app for organizing schedules, tracking
+              progress, and using focus and reminder features.
+            </p>
+            <div class="project-tags" aria-label="Technologies used">
+              <span>Flutter</span>
+              <span>Dart</span>
+              <span>Firebase</span>
+              <span>Provider</span>
+            </div>
+            <a
+              href="https://github.com/raghdaaaaa/Studia"
+              class="project-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image">
+            <img
+              src="https://raw.githubusercontent.com/raghdaaaaa/Brewly/main/assets/images/welcome_hero.jpg"
+              alt="Brewly app welcome artwork"
+            />
+          </div>
+          <div class="project-content">
+            <h3>Brewly</h3>
+            <p>
+              A coffee and bakery shopping app for browsing products, managing
+              a basket, and placing and tracking orders through a REST API.
+            </p>
+            <div class="project-tags" aria-label="Technologies used">
+              <span>Flutter</span>
+              <span>Dart</span>
+              <span>REST API</span>
+              <span>SharedPreferences</span>
+            </div>
+            <a
+              href="https://github.com/raghdaaaaa/Brewly"
+              class="project-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -201,15 +258,23 @@
         </li>
 
         <li>
-          <a href="#">Services</a>
+          <a href="#about">About</a>
         </li>
 
         <li>
-          <a href="#">About Me</a>
+          <a href="#skills">Skills</a>
         </li>
 
         <li>
-          <a href="#">Contact</a>
+          <a href="#projects">Projects</a>
+        </li>
+
+        <li>
+          <a href="#education">Education</a>
+        </li>
+
+        <li>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
       <p class="copyright">&#169; Raghdaa Emad | All Rights Reserved</p>
