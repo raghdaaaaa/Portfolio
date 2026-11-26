@@ -44,3 +44,15 @@ if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches&&'Intersection
 }else{
  motionTargets.forEach(target=>target.classList.add('is-visible'));
 }
+
+const contactForm=document.querySelector('#contact-form');
+if(contactForm){
+ contactForm.addEventListener('submit',event=>{
+  event.preventDefault();
+  if(!contactForm.reportValidity())return;
+  const data=new FormData(contactForm);
+  const subject=encodeURIComponent('Portfolio message from '+data.get('name'));
+  const body=encodeURIComponent('Name: '+data.get('name')+'\nEmail: '+data.get('email')+'\n\n'+data.get('message'));
+  window.location.href='mailto:ra4hdaa@gmail.com?subject='+subject+'&body='+body;
+ });
+}
