@@ -87,3 +87,32 @@ a{color:inherit;text-decoration:none}img{display:block;max-width:100%}button{fon
  .contact-section h2{font-size:clamp(2.8rem,10vw,4rem)}
 }
 @media(prefers-reduced-motion:reduce){.role-caret{animation:none}}
+
+
+/* Professional experience */
+.hero h1.hero-name{white-space:nowrap;font-size:clamp(2.5rem,5.1vw,4.8rem);letter-spacing:-.075em}
+.hero-name-period{color:var(--taupe)}
+.experience-section{padding:105px 0 112px;border-top:1px solid var(--line)}
+.experience-section .section-heading{margin-bottom:42px}
+.experience-card{position:relative;display:grid;grid-template-columns:28px 1fr 52px;gap:25px;align-items:start;padding:34px 38px;border:1px solid rgba(194,188,169,.2);border-radius:8px 38px 8px 38px;background:linear-gradient(125deg,rgba(230,226,214,.055),rgba(230,226,214,.018));backdrop-filter:blur(18px);box-shadow:0 18px 55px rgba(0,0,0,.13)}
+.experience-marker{display:flex;justify-content:center;padding-top:7px}
+.experience-marker span{width:9px;height:9px;border-radius:50%;background:var(--taupe);box-shadow:0 0 0 5px rgba(194,188,169,.1)}
+.experience-main{min-width:0}
+.experience-meta{display:flex;flex-wrap:wrap;gap:12px 22px;color:var(--taupe);font-size:.59rem;font-weight:700;letter-spacing:.14em}
+.experience-main h3{margin-top:19px;font:700 clamp(1.65rem,3vw,2.4rem)/1.15 "Manrope",sans-serif;letter-spacing:-.055em}
+.experience-place{margin-top:7px;color:var(--taupe);font-size:.83rem;font-weight:600}
+.experience-description{max-width:760px;margin-top:20px;color:var(--muted);font-size:.84rem;line-height:1.9}
+.experience-tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:23px}
+.experience-tags span{padding:8px 12px;border:1px solid var(--line);border-radius:99px;background:rgba(230,226,214,.035);color:var(--muted);font-size:.65rem}
+.experience-index{justify-self:end;color:rgba(194,188,169,.3);font:500 2.7rem/1 "Manrope",sans-serif;letter-spacing:-.08em}
+@media(max-width:700px){
+ .hero h1.hero-name{font-size:clamp(2.35rem,9vw,3.45rem);letter-spacing:-.08em}
+ .experience-section{padding:78px 0}
+ .experience-card{grid-template-columns:15px 1fr;padding:25px 20px;gap:13px;border-radius:7px 28px 7px 28px}
+ .experience-index{display:none}
+ .experience-meta{font-size:.54rem;gap:8px 13px}
+ .experience-main h3{font-size:1.65rem}
+ .experience-description{font-size:.8rem}
+ .experience-tags{gap:7px}
+ .experience-tags span{font-size:.6rem;padding:7px 10px}
+}
