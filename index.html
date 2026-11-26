@@ -1,35 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Raghdaa Emad — Flutter Developer creating thoughtful mobile experiences.">
-<title>Raghdaa Emad | Flutter Developer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"><link rel="stylesheet" href="style3.css">
-</head><body>
-<header class="site-header"><div class="header-inner">
-<a href="index.html" class="logo">RE<span>.</span></a>
-<button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-navigation"><span></span><span></span><span></span></button>
-<nav class="navigation" id="main-navigation" aria-label="Main navigation">
-<a href="index.html" class="active" aria-current="page">Home</a><a href="about.html">About</a><a href="skills.html">Skills</a><a href="projects.html">Projects</a><a href="education.html">Education</a><a href="contact.html">Contact</a>
-</nav></div></header>
-<main class="home-main">
-<section class="home-grid">
-<article class="bento hero-card">
-<div class="hero-content"><p class="eyebrow"><span class="status-dot"></span> FLUTTER DEVELOPER <span class="eyebrow-divider">/</span> EGYPT</p>
-<h1>Building apps.<br><span>Making ideas real.</span></h1>
-<p class="hero-intro">I'm <strong>Raghdaa Emad</strong> — I build mobile applications with Flutter, combining intuitive interfaces with practical functionality.</p>
-<div class="hero-actions"><a href="projects.html" class="button button-light">Explore my work <i class="fa-solid fa-arrow-up-right"></i></a><a href="contact.html" class="text-action">Let's connect <i class="fa-solid fa-arrow-up-right"></i></a></div>
-<div class="hero-socials"><a href="https://www.linkedin.com/in/رغْداءّ-عماد-012b31326" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="https://github.com/raghdaaaaa" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div></div>
-<div class="hero-portrait"><img src="pro3.jpg" alt="Raghdaa Emad"><span class="portrait-tag">CREATIVE<br>DEVELOPER</span></div>
-<div class="hero-decoration">RE<span>.</span></div>
-</article>
-<article class="bento intro-card"><span class="card-index">01 / ABOUT</span><div><p class="large-card-copy">Thoughtful interfaces.<br><span>Useful experiences.</span></p><a href="about.html" class="card-link">A little about me <i class="fa-solid fa-arrow-up-right"></i></a></div><i class="fa-solid fa-arrow-up-right card-corner"></i></article>
-<article class="bento skill-summary"><span class="card-index">02 / WHAT I DO</span><div class="skill-summary-icon"><i class="fa-solid fa-mobile-screen-button"></i></div><h2>Mobile app<br>development</h2><p>Flutter · Dart · REST APIs</p><a href="skills.html" class="card-link">Explore skills <i class="fa-solid fa-arrow-up-right"></i></a></article>
-<article class="bento project-feature"><div class="project-feature-top"><span class="card-index">03 / SELECTED WORK</span><a href="projects.html" class="round-link" aria-label="View all projects"><i class="fa-solid fa-arrow-up-right"></i></a></div><div class="project-feature-image"><img src="studia-preview.jpg" alt="Studia application preview"></div><div class="project-feature-bottom"><div><h2>Studia</h2><p>Study &amp; task management</p></div><span class="project-type">FLUTTER / FIREBASE</span></div></article>
-<article class="bento education-summary"><span class="card-index">04 / EDUCATION</span><div class="education-icon"><i class="fa-solid fa-graduation-cap"></i></div><h2>Computer Science</h2><p>Mansoura University · 2023—2027</p><a href="education.html" class="card-link">More details <i class="fa-solid fa-arrow-up-right"></i></a></article>
-<article class="bento contact-summary"><span class="card-index">05 / HAVE A PROJECT?</span><h2>Let's build<br><span>something useful.</span></h2><a href="contact.html" class="button button-dark">Get in touch <i class="fa-solid fa-arrow-up-right"></i></a><span class="contact-spark">✳</span></article>
-</section></main>
-<footer class="footer"><div class="footer-inner"><a href="index.html" class="footer-name">Raghdaa Emad<span>.</span></a><nav class="footer-nav" aria-label="Footer navigation"><a href="about.html">About</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a></nav><p>© <span id="copyright-year"></span> Raghdaa Emad</p></div></footer>
-<script src="srp.js"></script></body></html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Raghdaa Emad — Flutter Developer building thoughtful, user-friendly mobile applications.">
+<title>Raghdaa Emad — Flutter Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+<link rel="stylesheet" href="style3.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#home" class="logo" aria-label="Raghdaa Emad home">R<span>.</span></a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-navigation"><span></span><span></span><span></span></button>
+    <nav class="navigation" id="main-navigation" aria-label="Main navigation">
+      <a href="#home" class="active">Home</a><a href="#about">About</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#contact" class="nav-contact">Let's talk <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero section-wrap" id="home">
+  <div class="hero-copy">
+    <p class="eyebrow"><span class="eyebrow-line"></span> FLUTTER DEVELOPER <span class="eyebrow-location">BASED IN EGYPT</span></p>
+    <h1>Turning ideas<br>into <em>mobile</em><br>experiences<span class="period">.</span></h1>
+    <p class="hero-description">I'm <strong>Raghdaa Emad</strong>, a Flutter developer focused on building thoughtful interfaces and useful applications that make everyday tasks feel simpler.</p>
+    <div class="hero-actions"><a href="#work" class="button button-primary">Explore my work <i class="fa-solid fa-arrow-down"></i></a><a href="https://www.linkedin.com/in/رغْداءّ-عماد-012b31326" class="hero-link" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+    <div class="hero-meta"><span><i class="fa-brands fa-github"></i> <a href="https://github.com/raghdaaaaa" target="_blank" rel="noopener noreferrer">GitHub</a></span><span class="meta-divider"></span><span>Flutter · Dart · REST APIs</span></div>
+  </div>
+  <div class="hero-visual">
+    <div class="portrait-frame"><img src="pro3.jpg" alt="Portrait of Raghdaa Emad"></div>
+    <div class="portrait-caption"><span>RAGHDAA EMAD</span><span>DEVELOPER / 2026</span></div>
+    <span class="hero-orbit orbit-one"></span><span class="hero-orbit orbit-two"></span>
+    <div class="visual-note"><span class="note-mark">✳</span><span>Design-minded.<br>Detail-focused.</span></div>
+  </div>
+  <a class="scroll-cue" href="#work"><span>SCROLL TO EXPLORE</span><i class="fa-solid fa-arrow-down"></i></a>
+</section>
+
+<section class="work-section section-wrap" id="work">
+  <div class="section-heading">
+    <div><p class="eyebrow"><span class="eyebrow-line"></span> SELECTED WORK / 01—03</p><h2>Things I've <em>built.</em></h2></div>
+    <p class="section-intro">A few projects where I turned ideas into working mobile experiences.</p>
+  </div>
+  <article class="work-item work-featured">
+    <a class="work-image" href="https://github.com/raghdaaaaa/Brewly" target="_blank" rel="noopener noreferrer" aria-label="View Brewly on GitHub"><img src="https://raw.githubusercontent.com/raghdaaaaa/Brewly/main/assets/images/welcome_hero.jpg" alt="Brewly coffee and bakery app preview" loading="lazy"><span class="image-open"><i class="fa-solid fa-arrow-up-right"></i></span></a>
+    <div class="work-details"><div class="work-number">01 <span> / MOBILE E-COMMERCE</span></div><div><h3>Brewly</h3><p>A coffee and bakery shopping app. Browse products, manage a basket, place orders, and follow order progress through a connected REST API.</p></div><div class="work-bottom"><span>Flutter&nbsp;&nbsp;·&nbsp;&nbsp;Dart&nbsp;&nbsp;·&nbsp;&nbsp;REST API</span><a href="https://github.com/raghdaaaaa/Brewly" target="_blank" rel="noopener noreferrer">VIEW PROJECT <i class="fa-solid fa-arrow-up-right"></i></a></div></div>
+  </article>
+  <article class="work-item work-reverse">
+    <a class="work-image" href="https://github.com/raghdaaaaa/Studia" target="_blank" rel="noopener noreferrer" aria-label="View Studia on GitHub"><img src="studia-preview.jpg" alt="Studia study management app preview" loading="lazy"><span class="image-open"><i class="fa-solid fa-arrow-up-right"></i></span></a>
+    <div class="work-details"><div class="work-number">02 <span> / PRODUCTIVITY</span></div><div><h3>Studia</h3><p>A study and task management app designed to help students organize schedules, track progress, and stay focused.</p></div><div class="work-bottom"><span>Flutter&nbsp;&nbsp;·&nbsp;&nbsp;Firebase&nbsp;&nbsp;·&nbsp;&nbsp;Provider</span><a href="https://github.com/raghdaaaaa/Studia" target="_blank" rel="noopener noreferrer">VIEW PROJECT <i class="fa-solid fa-arrow-up-right"></i></a></div></div>
+  </article>
+  <article class="work-item">
+    <a class="work-image" href="https://github.com/raghdaaaaa/Laptix" target="_blank" rel="noopener noreferrer" aria-label="View Laptix on GitHub"><img src="laptix-preview.png" alt="Laptix laptop recommendation app preview" loading="lazy"><span class="image-open"><i class="fa-solid fa-arrow-up-right"></i></span></a>
+    <div class="work-details"><div class="work-number">03 <span> / SMART RECOMMENDATION</span></div><div><h3>Laptix</h3><p>A laptop recommendation app that helps students find suitable specifications based on their major, usage, and budget, with an offline suitability checker.</p></div><div class="work-bottom"><span>Flutter&nbsp;&nbsp;·&nbsp;&nbsp;Dart&nbsp;&nbsp;·&nbsp;&nbsp;Offline logic</span><a href="https://github.com/raghdaaaaa/Laptix" target="_blank" rel="noopener noreferrer">VIEW PROJECT <i class="fa-solid fa-arrow-up-right"></i></a></div></div>
+  </article>
+  <div class="all-projects"><span>MORE CODE, MORE EXPERIMENTS</span><a href="https://github.com/raghdaaaaa" target="_blank" rel="noopener noreferrer">Explore GitHub <i class="fa-solid fa-arrow-up-right"></i></a></div>
+</section>
+
+<section class="about-section section-wrap" id="about">
+  <div class="about-label"><p class="eyebrow"><span class="eyebrow-line"></span> A LITTLE ABOUT ME</p><span class="about-big-number">02</span></div>
+  <div class="about-content"><h2>I care about the details that make an app feel <em>right.</em></h2><div class="about-columns"><p>I'm a Computer Science student and Flutter developer who enjoys turning ideas into clear, practical mobile experiences. I work across interface development, app functionality, and REST API integration.</p><p>I value understanding the problem before writing code, keeping communication clear, and building around what people actually need. I'm always learning and looking for ways to make my work better.</p></div><a href="#contact" class="underlined-link">Have something in mind? Let's talk <i class="fa-solid fa-arrow-up-right"></i></a></div>
+</section>
+
+<section class="skills-section section-wrap" id="skills">
+  <div class="section-heading skills-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> WHAT I WORK WITH</p><h2>My <em>toolkit.</em></h2></div><p class="section-intro">The tools and technologies I use to build and improve mobile applications.</p></div>
+  <div class="skills-list">
+    <div class="skill-row"><span class="skill-index">01</span><h3>Flutter <small>Mobile development</small></h3><span class="skill-symbol"><i class="fa-solid fa-mobile-screen-button"></i></span></div>
+    <div class="skill-row"><span class="skill-index">02</span><h3>Dart <small>Programming language</small></h3><span class="skill-symbol"><i class="fa-solid fa-code"></i></span></div>
+    <div class="skill-row"><span class="skill-index">03</span><h3>REST APIs <small>Networking & integration</small></h3><span class="skill-symbol"><i class="fa-solid fa-cloud-arrow-down"></i></span></div>
+    <div class="skill-row"><span class="skill-index">04</span><h3>Firebase <small>Backend services</small></h3><span class="skill-symbol"><i class="fa-solid fa-fire"></i></span></div>
+    <div class="skill-row"><span class="skill-index">05</span><h3>Provider <small>State management</small></h3><span class="skill-symbol"><i class="fa-solid fa-diagram-project"></i></span></div>
+    <div class="skill-row"><span class="skill-index">06</span><h3>Testing <small>Unit & widget testing</small></h3><span class="skill-symbol"><i class="fa-solid fa-vial"></i></span></div>
+  </div>
+</section>
+
+<section class="education-section section-wrap">
+  <div class="education-kicker"><p class="eyebrow"><span class="eyebrow-line"></span> THE FOUNDATION</p><span class="about-big-number">03</span></div>
+  <div class="education-content"><p class="education-date">2023 — 2027 · EXPECTED GRADUATION</p><h2>Computer Science</h2><p>Faculty of Computers and Information<br>Mansoura University</p><span class="education-degree">BACHELOR'S DEGREE</span></div>
+</section>
+
+<section class="contact-section section-wrap" id="contact">
+  <div class="contact-top"><p class="eyebrow"><span class="eyebrow-line"></span> HAVE A PROJECT IN MIND?</p><span class="contact-star">✳</span></div>
+  <h2>Let's make<br>something <em>meaningful.</em></h2>
+  <div class="contact-bottom"><p>I'm open to conversations, collaborations, and new opportunities.</p><a href="https://www.linkedin.com/in/رغْداءّ-عماد-012b31326" target="_blank" rel="noopener noreferrer" class="button button-cream">Get in touch <i class="fa-solid fa-arrow-up-right"></i></a></div>
+</section>
+</main>
+<footer class="footer"><a href="#home" class="footer-brand">Raghdaa Emad<span>.</span></a><span>Flutter Developer · Egypt</span><div class="footer-links"><a href="https://github.com/raghdaaaaa" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/رغْداءّ-عماد-012b31326" target="_blank" rel="noopener noreferrer">LinkedIn</a></div><p>© <span id="copyright-year"></span> Raghdaa Emad</p></footer>
+<script src="srp.js"></script>
+</body>
+</html>
