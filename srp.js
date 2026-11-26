@@ -32,3 +32,15 @@ if(roleRotator&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
  };
  setTimeout(tick,1800);
 }
+
+const motionTargets=document.querySelectorAll('.section-heading,.project-card,.about-content,.experience-card,.toolkit-layout,.education-content,.contact-section');
+if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches&&'IntersectionObserver' in window){
+ const motionObserver=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+   if(entry.isIntersecting){entry.target.classList.add('is-visible');motionObserver.unobserve(entry.target);}
+  });
+ },{threshold:.12,rootMargin:'0px 0px -35px 0px'});
+ motionTargets.forEach(target=>{target.classList.add('reveal-item');motionObserver.observe(target);});
+}else{
+ motionTargets.forEach(target=>target.classList.add('is-visible'));
+}
