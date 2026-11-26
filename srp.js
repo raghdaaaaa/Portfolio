@@ -33,7 +33,7 @@ if(roleRotator&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
  setTimeout(tick,1800);
 }
 
-const motionTargets=document.querySelectorAll('.section-heading,.project-card,.about-content,.experience-card,.toolkit-layout,.education-content,.contact-section');
+const motionTargets=document.querySelectorAll('.section-heading,.project-card,.service-card,.about-content,.experience-card,.toolkit-layout,.education-content,.contact-section');
 if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches&&'IntersectionObserver' in window){
  const motionObserver=new IntersectionObserver(entries=>{
   entries.forEach(entry=>{
