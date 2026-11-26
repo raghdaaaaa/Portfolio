@@ -229,3 +229,19 @@ body{background:radial-gradient(ellipse at 90% 14%,rgba(194,188,169,.075),transp
 @media(max-width:900px){.project-grid{gap:14px}.project-info p{min-height:88px}}
 @media(max-width:700px){.project-grid{gap:18px}.project-photo,.project-card:nth-child(2) .project-photo{aspect-ratio:1.7/1}.project-info p{min-height:0}.project-card,.project-card:nth-child(2){height:auto}}
 @media(prefers-reduced-motion:reduce){.hero-copy>*,.hero-visual{animation:none!important}.reveal-item,.reveal-item.is-visible{opacity:1;transform:none;transition:none}.project-card,.project-photo img,.toolkit-pills span,.experience-tags span{transition:none!important}}
+
+ 
+/* Services */
+.services-section{padding:82px 0 88px}
+.services-section .section-heading{margin-bottom:34px}
+.services-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.service-card{position:relative;min-height:275px;padding:27px 25px 23px;display:flex;flex-direction:column;align-items:flex-start;border:1px solid rgba(230,226,214,.1);border-radius:30px 30px 30px 8px;background:linear-gradient(145deg,rgba(230,226,214,.07),rgba(230,226,214,.018));box-shadow:inset 0 1px 0 rgba(230,226,214,.08),0 18px 45px rgba(0,0,0,.12);transition:transform .3s ease,border-color .3s ease,background .3s ease}
+.service-card:hover{transform:translateY(-6px);border-color:rgba(194,188,169,.32);background:linear-gradient(145deg,rgba(230,226,214,.1),rgba(230,226,214,.025))}
+.service-number{position:absolute;right:24px;top:25px;color:rgba(194,188,169,.38);font:500 1.05rem "Manrope",sans-serif}
+.service-icon{width:48px;height:48px;display:grid;place-items:center;border-radius:16px 16px 16px 5px;background:rgba(194,188,169,.1);border:1px solid rgba(194,188,169,.16);color:var(--taupe);font-size:1.1rem}
+.service-card h3{margin-top:25px;font:650 1.25rem/1.25 "Manrope",sans-serif;letter-spacing:-.045em}
+.service-card p{margin-top:11px;color:var(--muted);font-size:.77rem;line-height:1.8;max-width:310px}
+.service-detail{margin-top:auto;padding-top:22px;color:var(--taupe);font-size:.55rem;font-weight:700;letter-spacing:.14em}
+@media(max-width:900px){.services-grid{gap:14px}.service-card{padding:23px 19px}.service-card h3{font-size:1.1rem}}
+@media(max-width:700px){.services-section{padding:65px 0}.services-grid{grid-template-columns:1fr;gap:14px}.service-card{min-height:225px;padding:23px 21px}.service-card h3{margin-top:20px;font-size:1.2rem}}
+@media(prefers-reduced-motion:reduce){.service-card{transition:none}}
