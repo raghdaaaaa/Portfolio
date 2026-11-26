@@ -196,3 +196,36 @@ body{background:radial-gradient(ellipse at 90% 14%,rgba(194,188,169,.075),transp
  .education-section{padding:45px 0 55px}
  .contact-section{margin-top:55px}
 }
+
+
+/* Unified project cards and site-wide motion */
+.project-grid{align-items:stretch;gap:20px}
+.project-card,.project-card:nth-child(2){height:100%;display:flex;flex-direction:column;transform:none;border-radius:28px 28px 28px 8px}
+.project-card:hover,.project-card:nth-child(2):hover{transform:translateY(-7px)}
+.project-photo,.project-card:nth-child(2) .project-photo{height:auto;aspect-ratio:1.55/1;flex:0 0 auto;border-radius:20px 20px 20px 6px}
+.project-info{display:flex;flex:1;flex-direction:column;padding:19px 15px 17px}
+.project-info h3{margin-top:15px}
+.project-info p{flex:1;min-height:72px}
+.project-visit{margin-top:17px}
+.project-topline{min-height:1.2em}
+.project-card:focus-within{outline:1px solid rgba(194,188,169,.55);outline-offset:4px}
+.project-photo img{transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .5s}
+.project-card:hover .project-photo img{transform:scale(1.055);filter:saturate(.95)}
+.toolkit-pills span,.experience-tags span{transition:transform .25s ease,border-color .25s ease,background .25s ease}
+.toolkit-pills span:hover,.experience-tags span:hover{transform:translateY(-3px);border-color:rgba(194,188,169,.38);background:rgba(230,226,214,.1)}
+.hero-copy>*{animation:softRise .75s both}
+.hero-copy>*:nth-child(2){animation-delay:.08s}
+.hero-copy>*:nth-child(3){animation-delay:.16s}
+.hero-copy>*:nth-child(4){animation-delay:.24s}
+.hero-copy>*:nth-child(5){animation-delay:.32s}
+.hero-copy>*:nth-child(6){animation-delay:.4s}
+.hero-visual{animation:softFloatIn .9s .12s both}
+@keyframes softRise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes softFloatIn{from{opacity:0;transform:translateY(22px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+.reveal-item{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.reveal-item.is-visible{opacity:1;transform:translateY(0)}
+.project-card:nth-child(2){transition-delay:.08s}
+.project-card:nth-child(3){transition-delay:.16s}
+@media(max-width:900px){.project-grid{gap:14px}.project-info p{min-height:88px}}
+@media(max-width:700px){.project-grid{gap:18px}.project-photo,.project-card:nth-child(2) .project-photo{aspect-ratio:1.7/1}.project-info p{min-height:0}.project-card,.project-card:nth-child(2){height:auto}}
+@media(prefers-reduced-motion:reduce){.hero-copy>*,.hero-visual{animation:none!important}.reveal-item,.reveal-item.is-visible{opacity:1;transform:none;transition:none}.project-card,.project-photo img,.toolkit-pills span,.experience-tags span{transition:none!important}}
