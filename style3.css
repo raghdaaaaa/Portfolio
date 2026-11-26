@@ -13,6 +13,11 @@
   --accent-dark: #181712;
   --accent-soft: #987E5D;
   --border: rgba(24, 23, 18, 0.18);
+  --gold: var(--accent);
+  --brown: var(--jet);
+  --cream: var(--platinum);
+  --charcoal: var(--smoky-black);
+  --taupe: var(--text-light);
   --header-height: 78px;
 }
 
@@ -63,14 +68,14 @@ button {
   z-index: 100;
   height: var(--header-height);
   border-bottom: 1px solid transparent;
-  background: rgba(223, 216, 197, 0.94);
+  background: rgba(228, 228, 229, 0.94);
   backdrop-filter: blur(14px);
   transition: border-color 0.2s ease, background 0.2s ease;
 }
 
 .site-header.scrolled {
   border-color: var(--border);
-  background: rgba(223, 216, 197, 0.98);
+  background: rgba(228, 228, 229, 0.98);
 }
 
 .header-inner {
@@ -440,7 +445,7 @@ font-size: 1.25rem;
 .project-card {
   min-width: 0;
   overflow: hidden;
-  border: 1px solid rgba(223, 216, 197, 0.18);
+  border: 1px solid rgba(228, 228, 229, 0.18);
   border-radius: 18px;
   background: var(--surface-dark);
   transition: transform 0.25s ease, border-color 0.25s ease;
@@ -454,7 +459,7 @@ font-size: 1.25rem;
 .project-image {
   aspect-ratio: 16 / 10;
   overflow: hidden;
-  border-bottom: 1px solid rgba(223, 216, 197, 0.18);
+  border-bottom: 1px solid rgba(228, 228, 229, 0.18);
   background: var(--taupe);
 }
 
@@ -516,7 +521,7 @@ font-size: 1.25rem;
 
 .project-tags li {
   padding: 7px 9px;
-  border: 1px solid rgba(223, 216, 197, 0.28);
+  border: 1px solid rgba(228, 228, 229, 0.28);
   border-radius: 7px;
   color: var(--text-light);
   font-size: 0.72rem;
@@ -631,7 +636,7 @@ font-size: 1.25rem;
 }
 
 .footer {
-  border-top: 1px solid rgba(223, 216, 197, 0.18);
+  border-top: 1px solid rgba(228, 228, 229, 0.18);
   background: var(--charcoal);
   color: var(--text-light);
 }
