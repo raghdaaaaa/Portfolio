@@ -11,7 +11,7 @@ if(menuToggle&&navigation){
 const year=document.querySelector('#copyright-year');if(year)year.textContent=new Date().getFullYear();
 const roleRotator=document.querySelector('.role-rotator');
 if(roleRotator&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
- const roles=['Flutter Developer','Mobile App Developer','Frontend Developer'];
+ const roles=['Flutter Developer','Mobile App Developer','Backend Developer'];
  let roleIndex=0;
  let charIndex=roles[0].length;
  let deleting=true;
