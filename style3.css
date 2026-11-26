@@ -1,23 +1,23 @@
 ﻿:root {
-  --platinum: #E4E4E5;
-  --chamoisee: #987E5D;
-  --smoky-black: #181712;
-  --jet: #2B2C26;
-  --bg: #E4E4E5;
-  --bg-alt: #987E5D;
-  --surface: #987E5D;
-  --surface-dark: #2B2C26;
-  --text: #181712;
-  --text-light: #E4E4E5;
-  --accent: #987E5D;
-  --accent-dark: #181712;
-  --accent-soft: #987E5D;
-  --border: rgba(24, 23, 18, 0.18);
+  --platinum: #E6E2D6;
+  --chamoisee: #C2BCA9;
+  --smoky-black: #1A181A;
+  --jet: #2C1917;
+  --bg: #E6E2D6;
+  --bg-alt: #C2BCA9;
+  --surface: #2C1917;
+  --surface-dark: #1A181A;
+  --text: #1A181A;
+  --text-light: #E6E2D6;
+  --accent: #2C1917;
+  --accent-dark: #1A181A;
+  --accent-soft: #2C1917;
+  --border: rgba(26, 24, 26, 0.18);
   --gold: var(--accent);
   --brown: var(--jet);
   --cream: var(--platinum);
   --charcoal: var(--smoky-black);
-  --taupe: var(--text-light);
+  --taupe: var(--chamoisee);
   --header-height: 78px;
 }
 
@@ -68,14 +68,14 @@ button {
   z-index: 100;
   height: var(--header-height);
   border-bottom: 1px solid transparent;
-  background: rgba(228, 228, 229, 0.94);
+  background: rgba(230, 226, 214, 0.94);
   backdrop-filter: blur(14px);
   transition: border-color 0.2s ease, background 0.2s ease;
 }
 
 .site-header.scrolled {
   border-color: var(--border);
-  background: rgba(228, 228, 229, 0.98);
+  background: rgba(230, 226, 214, 0.98);
 }
 
 .header-inner {
@@ -445,7 +445,7 @@ font-size: 1.25rem;
 .project-card {
   min-width: 0;
   overflow: hidden;
-  border: 1px solid rgba(228, 228, 229, 0.18);
+  border: 1px solid rgba(230, 226, 214, 0.18);
   border-radius: 18px;
   background: var(--surface-dark);
   transition: transform 0.25s ease, border-color 0.25s ease;
@@ -459,7 +459,7 @@ font-size: 1.25rem;
 .project-image {
   aspect-ratio: 16 / 10;
   overflow: hidden;
-  border-bottom: 1px solid rgba(228, 228, 229, 0.18);
+  border-bottom: 1px solid rgba(230, 226, 214, 0.18);
   background: var(--taupe);
 }
 
@@ -521,7 +521,7 @@ font-size: 1.25rem;
 
 .project-tags li {
   padding: 7px 9px;
-  border: 1px solid rgba(228, 228, 229, 0.28);
+  border: 1px solid rgba(230, 226, 214, 0.28);
   border-radius: 7px;
   color: var(--text-light);
   font-size: 0.72rem;
@@ -636,7 +636,7 @@ font-size: 1.25rem;
 }
 
 .footer {
-  border-top: 1px solid rgba(228, 228, 229, 0.18);
+  border-top: 1px solid rgba(230, 226, 214, 0.18);
   background: var(--charcoal);
   color: var(--text-light);
 }
