@@ -529,3 +529,86 @@ body{
 @media(prefers-reduced-motion:reduce){
   .service-card,.project-card,.contact-method{transition:none!important}
 }
+
+
+/* Contact section: quieter, editorial link layout */
+.contact-section{
+  position:relative;
+  overflow:hidden;
+}
+.contact-section .contact-bottom p{
+  max-width:440px;
+}
+.contact-methods{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  column-gap:34px;
+  row-gap:0;
+  margin-top:42px;
+  border-top:1px solid rgba(194,188,169,.17);
+}
+.contact-method{
+  min-height:88px;
+  padding:17px 4px;
+  gap:16px;
+  border:0;
+  border-bottom:1px solid rgba(194,188,169,.14);
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+  backdrop-filter:none;
+  -webkit-backdrop-filter:none;
+  transition:color .25s ease,transform .25s ease;
+}
+.contact-method:hover{
+  transform:translateX(4px);
+  border-color:rgba(194,188,169,.24);
+  background:transparent;
+}
+.contact-method-icon{
+  flex:0 0 39px;
+  width:39px;
+  height:39px;
+  border:1px solid rgba(194,188,169,.2);
+  border-radius:50%;
+  background:rgba(194,188,169,.07);
+  color:var(--taupe);
+  font-size:.9rem;
+}
+.contact-method-copy{gap:4px}
+.contact-method-copy small{
+  font-size:.5rem;
+  letter-spacing:.16em;
+  color:rgba(194,188,169,.7);
+}
+.contact-method-copy strong{
+  font:600 .88rem/1.4 "DM Sans",sans-serif;
+  letter-spacing:.005em;
+  color:var(--cream);
+}
+.contact-method-arrow{
+  color:rgba(194,188,169,.7);
+  font-size:.62rem;
+  transition:transform .25s ease,color .25s ease;
+}
+.contact-method:hover .contact-method-arrow{
+  transform:translate(3px,-3px);
+  color:var(--cream);
+}
+.contact-method:hover .contact-method-icon{
+  background:rgba(194,188,169,.13);
+  border-color:rgba(194,188,169,.34);
+}
+@media(max-width:700px){
+  .contact-methods{
+    grid-template-columns:1fr;
+    margin-top:30px;
+  }
+  .contact-method{
+    min-height:76px;
+    padding:14px 2px;
+  }
+  .contact-method-copy strong{font-size:.84rem}
+}
+@media(prefers-reduced-motion:reduce){
+  .contact-method,.contact-method-arrow{transition:none!important}
+}
